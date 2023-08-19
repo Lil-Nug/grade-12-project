@@ -1,7 +1,7 @@
 import mysql.connector
 import flask as f
 
-db=mysql.connector.connect(host='localhost', user='root', password='5120', database='workex')
+db=mysql.connector.connect(host='localhost', user='root', password='', database='workex')
 
 
 app = f.Flask(__name__, template_folder='', static_folder='')
