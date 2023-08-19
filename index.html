@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>testing</title>
+    <link
+      rel="stylesheet"
+      ,
+      href="{{url_for('static', filename='style.css')}}"
+    />
+  </head>
+  <table>
+    <thead>
+      <tr>
+        <th>Admission No.</th>
+        <th>Cash in Hand</th>
+        <th>HDFC</th>
+        <th>UCO</th>
+        <th>ZOMATO</th>
+        <th>HINDUSTAN_UNI</th>
+        <th>CIPLA</th>
+        <th>TATA</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in data %}
+      <tr>
+        <td>{{row[0]}}</td>
+        <td>{{row[1]}}</td>
+        <td>{{row[2]}}</td>
+        <td>{{row[3]}}</td>
+        <td>{{row[4]}}</td>
+        <td>{{row[5]}}</td>
+        <td>{{row[6]}}</td>
+        <td>{{row[7]}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <form action="/" method="post">
+    <button name="testbtn" type="submit">reload table</button>
+  </form>
+</html>

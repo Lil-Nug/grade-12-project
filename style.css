@@ -1,0 +1,38 @@
+/* html{
+    overflow-x: hidden;
+} */
+
+body{
+    margin:0;
+    background:#06190D;
+    color:#D9F7E5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table{
+    border:2px solid rgba(9, 236, 100,0.7);
+    width:100vw;
+    max-height:70vh;
+    display:block;
+    overflow-y: scroll;
+    border-collapse: collapse;
+    text-align: center;
+    font-weight:900;
+}
+th{
+    border-collapse: collapse;
+    width:100vw;
+    border:1.5px solid #21F877;
+}
+tr,td{
+    height:2rem;
+    border: 1px solid rgba(9, 236, 100,0.3);
+}
+tr:nth-child(even){
+    background:#082614;
+}
+
+button{
+    height:50px;
+    width:50px;
+}
