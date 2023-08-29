@@ -32,7 +32,24 @@ tr:nth-child(even){
     background:#082614;
 }
 
-button{
-    height:50px;
-    width:50px;
+
+.buy{
+    display:grid;
+    width: 30vw;
+}
+
+.sell{
+    width: 30vw;
+    display:grid;
+}
+input[type=submit]{
+    position:relative;
+    left:30%;
+    margin-top:1rem;
+    width:30%;
+}
+
+section{
+    display:flex;
+    width:100vw;
 }

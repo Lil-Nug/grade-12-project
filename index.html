@@ -35,8 +35,53 @@
       {% endfor %}
     </tbody>
   </table>
-
-  <form action="/" method="post">
-    <button name="testbtn" type="submit">reload table</button>
-  </form>
 </html>
+
+<section class="forms">
+
+<form action="/" method="post">
+  <fieldset class="buy">
+    <legend ">BUY</legend>
+    <label for="admno">Admission No: </label>
+    <input type="text" id="admno" name="admno"/>
+
+    <label for="company">Company: </label>
+    <select name="company" id="company">
+      <option value="HDFC">HDFC</option>
+      <option value="UCO">UCO</option>
+      <option value="ZOMATO">ZOMATO</option>
+      <option value="HINDUSTAN_UNI">HINDUSTAN_UNI</option>
+      <option value="CIPLA">CIPLA</option>
+      <option value="TATA">TATA</option>
+    </select>
+
+    <label for="company">Number of shares: </label>
+    <input type="number" id="noshares" name="noshares">
+
+    <input type="submit" value="submit" name="buy">
+  </fieldset>
+</form>
+
+<form action="/" method="post">
+  <fieldset class="sell">
+    <legend ">SELL</legend>
+    <label for="admno">Admission No: </label>
+    <input type="text" id="admno" name="admno"/>
+    <label for="company">Company: </label>
+    <select name="company" id="company">
+      <option value="HDFC">HDFC</option>
+      <option value="UCO">UCO</option>
+      <option value="ZOMATO">ZOMATO</option>
+      <option value="HINDUSTAN_UNI">HINDUSTAN_UNI</option>
+      <option value="CIPLA">CIPLA</option>
+      <option value="TATA">TATA</option>
+    </select>
+
+    <label for="company">Number of shares: </label>
+    <input type="number" id="noshares" name="noshares">
+
+    <input type="submit" value="submit" name="sell">
+  </fieldset>
+</form>
+
+</section>
